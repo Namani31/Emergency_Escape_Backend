@@ -8,4 +8,8 @@ public class BeaconData {
     double distance;
     UUID uuid;
     String macAddress;
+
+    public UUID getUuid() {
+        return uuid;
+    }
 }
