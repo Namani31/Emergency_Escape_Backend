@@ -1,6 +1,6 @@
 package com.namani.demo.controller.location;
 
-import com.namani.demo.dto.Location;
+import com.namani.demo.dto.BeaconData;
 import com.namani.demo.dto.LocationPostRequestDto;
 import com.namani.demo.dto.LocationPostResponseDto;
 import com.namani.demo.entity.Device;
@@ -27,15 +27,8 @@ public class LocationController {
     @PostMapping("/test/api/v1/location")
     public String postLocation(@RequestBody LocationPostRequestDto locationPostRequestDto) {
         Device device = new Device();
-        device.setId(locationPostRequestDto.getId());
-        device.setLocationX(locationPostRequestDto.getLocation().getX());
-        device.setLocationY(locationPostRequestDto.getLocation().getY());
-        device.setFloor(locationPostRequestDto.getLocation().getFloor());
-        device.setName("testName");
-        device.setIsUser(1);
-        device.setLastUpdated(LocalDateTime.now());
-        deviceRepository.save(device);
-        return String.valueOf(locationPostRequestDto.getId());
+
+        return "";
     }
 
     // 위치정보 주기
@@ -45,13 +38,7 @@ public class LocationController {
         ArrayList<LocationPostResponseDto> listLocation = new ArrayList<LocationPostResponseDto>(listDevice.size());
         for (int i = 0; i < listDevice.size(); i++) {
             LocationPostResponseDto locationPostResponseDto = new LocationPostResponseDto();
-            locationPostResponseDto.setName(listDevice.get(i).name);
-            Location location = new Location();
-            location.setX(listDevice.get(i).getLocationX());
-            location.setY(listDevice.get(i).getLocationY());
-            location.setFloor(listDevice.get(i).getFloor());
-            locationPostResponseDto.setLocation(location);
-            locationPostResponseDto.setLastUpdated(listDevice.get(i).getLastUpdated());
+
             listLocation.add(locationPostResponseDto);
         }
         return listLocation;

@@ -4,15 +4,15 @@ import java.time.LocalDateTime;
 
 public class LocationPostResponseDto {
     public String name; // User name
-    public Location location;  // location_x + location_y
+    public BeaconData beaconData;  // location_x + location_y
     public LocalDateTime last_updated;
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setLocation(Location location) {
-        this.location = location;
+    public void setLocation(BeaconData beaconData) {
+        this.beaconData = beaconData;
     }
 
     public void setLastUpdated(LocalDateTime lastUpdated) {
