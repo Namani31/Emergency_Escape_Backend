@@ -7,9 +7,8 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.UUID;
 
-public interface DeviceRepository extends CrudRepository<Device, Integer> {
-    public Device findByUuid(UUID uuid);
-    public List<Device> findAllByLastUpdatedBetween(LocalDateTime start, LocalDateTime end);
+public interface QRCodeRepository extends CrudRepository<QRCode, Integer> {
+    public QRCode findByQRData(String QRdata);
+    public List<QRCode> findAllByLastUpdatedBetween(LocalDateTime start, LocalDateTime end);
 }
