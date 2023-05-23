@@ -10,9 +10,9 @@ public class Device {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
-    public String name;
-    private int is_user;
+    private int id; // User identify id
+    public String name; // User name
+    private int is_user;    // 1이면 유저
     private float location_x;
     private float location_y;
     private int floor;

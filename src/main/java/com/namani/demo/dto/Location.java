@@ -16,4 +16,16 @@ public class Location {
     public int getFloor() {
         return floor;
     }
+
+    public void setX(float x) {
+        this.x = x;
+    }
+
+    public void setY(float y) {
+        this.y = y;
+    }
+
+    public void setFloor(int floor) {
+        this.floor = floor;
+    }
 }
