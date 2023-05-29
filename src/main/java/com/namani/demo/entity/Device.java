@@ -15,7 +15,7 @@ public class Device {
     private int id; // User identify id
     @Column(columnDefinition = "binary(16)")
     private UUID uuid;
-    @Column(name="location_id")
+    @JoinColumn(name="location_id")
     @ManyToOne
     private Location location;
 

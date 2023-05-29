@@ -11,6 +11,6 @@ public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id; // User identify id
-    private int room_number;
-    private int floor;
+    public int room_number;
+    public int floor;
 }
