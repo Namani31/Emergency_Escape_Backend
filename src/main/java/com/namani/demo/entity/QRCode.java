@@ -13,7 +13,7 @@ public class QRCode {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id; // User identify id
     private String qr_data;
-    @Column(name="location_id")
+    @JoinColumn(name="location_id")
     @ManyToOne
     private Location location;
 

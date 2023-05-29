@@ -6,6 +6,9 @@ import com.namani.demo.entity.Location;
 import com.namani.demo.entity.QRCode;
 import com.namani.demo.repository.DeviceRepository;
 import com.namani.demo.repository.QRCodeRepository;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,13 +24,22 @@ public class LocationController {
     private DeviceRepository deviceRepository;
     private QRCodeRepository qrCodeRepository;
 
-    public LocationController(DeviceRepository deviceRepository) {
+    public LocationController(DeviceRepository deviceRepository, QRCodeRepository qrCodeRepository) {
         this.deviceRepository = deviceRepository;
+        this.qrCodeRepository = qrCodeRepository;
     }
+
+    @Operation(summary = "QR, Beacon POST", description = "QR, Beacon POST")
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "OK"),
+            @ApiResponse(responseCode = "400", description = "BAD REQUEST"),
+    })
 
     // 내가 위치정보 받기
     @PostMapping("/test/api/v1/location")
     public String postLocation(@RequestBody LocationPostRequestDto locationPostRequestDto) {
+
+
         QRCode qrcode = qrCodeRepository.findByQRData(locationPostRequestDto.getQrData());  // DB에서 QR데이터 일치하는 엔티티 가져오기
 
         if (qrcode == null) {
@@ -42,6 +54,11 @@ public class LocationController {
         return "성공";
     }
 
+    @Operation(summary = "QR, Beacon GET", description = "QR, Beacon GET")
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "OK"),
+            @ApiResponse(responseCode = "400", description = "BAD REQUEST"),
+    })
     // 위치정보 주기
     @GetMapping("/test/api/v1/location")
     public List<Location> getLocation() {
@@ -51,14 +68,14 @@ public class LocationController {
         List<Device> listDevice = deviceRepository.findAllByLastUpdatedBetween(start, end);
         List<Location> listLocation = new ArrayList<Location>();
 
-        for (int i = 0; i < listQRCode.size(); i++) {
-            listLocation.add(listQRCode.get(i).getLocation());
-
+        for (int qrGet = 0; qrGet < listQRCode.size(); qrGet++) {
+            listLocation.add(listQRCode.get(qrGet).getLocation());
         }
 
-        for (int i = 0; i < listDevice.size(); i++) {
-            listLocation.add(listDevice.get(i).getLocation());
+        for (int deviceGet = 0; deviceGet < listDevice.size(); deviceGet++) {
+            listLocation.add(listDevice.get(deviceGet).getLocation());
         }
         return listLocation;
     }
+
 }
