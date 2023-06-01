@@ -1,4 +1,4 @@
-package com.namani.demo.controller.test;
+package com.namani.ee.controller.test;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

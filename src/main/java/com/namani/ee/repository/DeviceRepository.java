@@ -1,7 +1,6 @@
-package com.namani.demo.repository;
+package com.namani.ee.repository;
 
-import com.namani.demo.entity.Device;
-import com.namani.demo.entity.QRCode;
+import com.namani.ee.entity.Device;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

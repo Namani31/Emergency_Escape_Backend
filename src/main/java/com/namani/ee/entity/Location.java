@@ -1,8 +1,6 @@
-package com.namani.demo.entity;
+package com.namani.ee.entity;
 
 import jakarta.persistence.*;
-
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name="location")
