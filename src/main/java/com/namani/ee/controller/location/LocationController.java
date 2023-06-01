@@ -1,11 +1,11 @@
-package com.namani.demo.controller.location;
+package com.namani.ee.controller.location;
 
-import com.namani.demo.dto.LocationPostRequestDto;
-import com.namani.demo.entity.Device;
-import com.namani.demo.entity.Location;
-import com.namani.demo.entity.QRCode;
-import com.namani.demo.repository.DeviceRepository;
-import com.namani.demo.repository.QRCodeRepository;
+import com.namani.ee.dto.LocationPostRequestDto;
+import com.namani.ee.entity.Device;
+import com.namani.ee.entity.Location;
+import com.namani.ee.entity.QRCode;
+import com.namani.ee.repository.DeviceRepository;
+import com.namani.ee.repository.QRCodeRepository;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

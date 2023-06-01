@@ -1,10 +1,10 @@
-package com.namani.demo;
+package com.namani.ee;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class EEApplicationTests {
 
 	@Test
 	void contextLoads() {
