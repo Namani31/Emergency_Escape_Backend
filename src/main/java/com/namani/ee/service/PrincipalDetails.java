@@ -1,5 +1,6 @@
 package com.namani.ee.service;
 
+import com.namani.ee.entity.Manager;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -8,10 +9,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class PrincipalDetails implements UserDetails {
-    private User user;
+    private Manager manager;
 
-    public PrincipalDetails(User user) {
-        this.user = user;
+    public PrincipalDetails(Manager manager) {
+        this.manager = manager;
     }
 
     @Override
@@ -20,7 +21,6 @@ public class PrincipalDetails implements UserDetails {
         collect.add(new GrantedAuthority() {
             @Override
             public String getAuthority() {
-                //return user.getRole();
                 return "";
             }
         });
@@ -29,12 +29,12 @@ public class PrincipalDetails implements UserDetails {
 
     @Override
     public String getPassword() {
-        return user.getPassword();
+        return manager.password;
     }
 
     @Override
     public String getUsername() {
-        return user.getUsername();
+        return manager.username;
     }
 
     @Override
