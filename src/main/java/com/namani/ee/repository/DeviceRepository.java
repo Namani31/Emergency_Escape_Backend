@@ -10,6 +10,10 @@ import java.util.UUID;
 
 public interface DeviceRepository extends CrudRepository<Device, Integer> {
     public Device findByUuid(UUID uuid);
+    Device findByMajor(int major);
+    Device findByMinor(int minor);
+
+
     @Query("select d from Device d where d.last_updated between ?1 and ?2")
     public List<Device> findAllByLastUpdatedBetween(LocalDateTime start, LocalDateTime end);
 }

@@ -17,6 +17,8 @@ public class Device {
     @JoinColumn(name="location_id")
     @ManyToOne
     private Location location;
+    private int major;
+    private int minor;
 
     private LocalDateTime last_updated;
 
@@ -27,4 +29,5 @@ public class Device {
     public Location getLocation() {
         return location;
     }
+
 }

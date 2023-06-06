@@ -40,9 +40,12 @@ public class LocationController {
     public String postLocation(@RequestBody LocationPostRequestDto locationPostRequestDto) {
 
         QRCode qrcode = qrCodeRepository.findByQRData(locationPostRequestDto.getQrData());  // DB에서 QR데이터 일치하는 엔티티 가져오기
+        Device major = deviceRepository.findByMajor(locationPostRequestDto.getBeaconData().getMajor());
+        Device minor = deviceRepository.findByMinor(locationPostRequestDto.getBeaconData().getMinor());
 
         if (qrcode == null) {
             Device device = deviceRepository.findByUuid(locationPostRequestDto.getBeaconData().getUuid()); // 비콘 데이터, UUID를 DB에서 확인
+
             if (device == null) {   // QR, 비콘데이터 둘 다 일치하는게 없으면 실패
                 return "실패";
             }

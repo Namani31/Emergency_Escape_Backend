@@ -9,11 +9,22 @@ public class BeaconData {
 
     @Schema(description = "Beacon Name", example = "Beacon_1")
     String name;
-//    @Schema(description = "Distance between beacons", example = "30.12cm")
-//    double distance;
-    @Schema(description = "Phone UUID", example = "efbbbf30-3639-3339-3431-300000000000")
+    @Schema(description = "Beacon UUID", example = "1f4ae6a0-0037-4020-4101-271071580001")
     UUID uuid;
+    @Schema(description = "Beacon Major", example = "225")
+    int major;
+    @Schema(description = "Beacon Minor", example = "925")
+    int minor;
+
     public UUID getUuid() {
         return uuid;
+    }
+
+    public int getMajor() {
+        return major;
+    }
+
+    public int getMinor() {
+        return minor;
     }
 }
