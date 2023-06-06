@@ -7,8 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
-
 import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
@@ -24,7 +22,7 @@ public class SecurityConfig {
                     .requestMatchers("/swagger-ui/*").permitAll()
                     .requestMatchers("/v3/api-docs").permitAll()
                     .requestMatchers("/v3/api-docs/swagger-config").permitAll()
-                    .anyRequest().authenticated()); // 어떠한 요청이라도 인증 필요
+                    .anyRequest().permitAll());
 
         http.formLogin(login -> login   // form 방식 로그인 사용
                 .successHandler((req, res, auth) -> res.setStatus(HttpStatus.OK.value()))

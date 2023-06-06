@@ -27,4 +27,12 @@ public class QRCode {
     public Location getLocation() {
         return location;
     }
+
+    public void setCaptured_count(int captured_count) {
+        this.captured_count = captured_count;
+    }
+
+    public int getCaptured_count() {
+        return captured_count;
+    }
 }
