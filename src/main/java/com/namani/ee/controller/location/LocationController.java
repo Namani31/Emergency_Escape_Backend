@@ -39,7 +39,6 @@ public class LocationController {
     @PostMapping("/test/api/v1/location")
     public String postLocation(@RequestBody LocationPostRequestDto locationPostRequestDto) {
 
-
         QRCode qrcode = qrCodeRepository.findByQRData(locationPostRequestDto.getQrData());  // DB에서 QR데이터 일치하는 엔티티 가져오기
 
         if (qrcode == null) {
@@ -48,9 +47,12 @@ public class LocationController {
                 return "실패";
             }
             device.setLast_updated(LocalDateTime.now());
+            deviceRepository.save(device);
             return "성공";
         }
+        qrcode.setCaptured_count(qrcode.getCaptured_count()+1);
         qrcode.setLast_updated(LocalDateTime.now());
+        qrCodeRepository.save(qrcode);
         return "성공";
     }
 
@@ -62,6 +64,7 @@ public class LocationController {
     // 위치정보 주기
     @GetMapping("/test/api/v1/location")
     public List<Location> getLocation() {
+
         LocalDateTime start = LocalDateTime.now().minusHours(2);
         LocalDateTime end = LocalDateTime.now();
         List<QRCode> listQRCode = qrCodeRepository.findAllByLastUpdatedBetween(start, end);
@@ -69,11 +72,17 @@ public class LocationController {
         List<Location> listLocation = new ArrayList<Location>();
 
         for (int qrGet = 0; qrGet < listQRCode.size(); qrGet++) {
-            listLocation.add(listQRCode.get(qrGet).getLocation());
+            QRCode qrCode = listQRCode.get(qrGet);
+            qrCode.setLast_updated(LocalDateTime.of(1970, 1, 1, 0,0,1));    // DB에 최소값 기록
+            qrCodeRepository.save(qrCode);
+            listLocation.add(qrCode.getLocation());
         }
 
         for (int deviceGet = 0; deviceGet < listDevice.size(); deviceGet++) {
-            listLocation.add(listDevice.get(deviceGet).getLocation());
+            Device device = listDevice.get(deviceGet);
+            device.setLast_updated(LocalDateTime.of(1970, 1, 1, 0,0,1));    // DB에 최소값 기록
+            deviceRepository.save(device);
+            listLocation.add(device.getLocation());
         }
         return listLocation;
     }
