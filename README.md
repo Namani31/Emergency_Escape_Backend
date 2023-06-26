@@ -3,28 +3,29 @@
 ![로고3](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/85d000ba-4bb3-4d9d-8d2a-06f90af9af70)
 ----
 ▶ <b>팀원 소개</b>  
-- Frontend: 최지훈 - https://github.com/Hanigaram <br>
-- Backend: 김윤지 - https://github.com/Namani31 <br>
-- AR: 한승주 - https://github.com/ComeOnFeelTheNoise-yeah
-- 프로젝트 서포트: 유지수 - https://github.com/Tetrahedrite
+|이름|담당|깃허브 주소|
+|------|:---:|---|
+|최지훈|Frontend|https://github.com/Hanigaram|
+|김윤지|Backend|https://github.com/Namani31|
+|한승주|AR|https://github.com/ComeOnFeelTheNoise-yeah|
+|유지수|프로젝트 서포트|https://github.com/Tetrahedrite|
+<br>
 
 ▶ <b>개발 환경</b>
 
-- 언어: Java, JavaScript(Node.js), C#  
-
-- 운영체제: Windows 10, macOS, Ubuntu 22.04  
-
-- 엔진: Unity 2021.3.20f1  
-
-- IDE: Visual Studio Code, IntelliJ, DataGrip  
-
-- 데이터베이스: MySQL  
-
-- 네트워크: Ngrok  
-
-- API 문서: Swagger  
-
-- 협업 툴: Notion, GitHub, GitLab  
+|제목|내용|
+|------|------|
+|Language|Java, JavaScript(Node.js), C#|
+|Framework|Spring Boot, React, React-Native|
+|OS|Windows 10, macOS, Ubuntu 22.04|
+|Engine|Unity 2021.3.20f1|
+|IDE|Visual Studio Code, IntelliJ, DataGrip|
+|Database|MySQL|
+|Network|Ngrok|
+|API Documentation|Swagger|
+|IDE|Visual Studio Code, IntelliJ, DataGrip|
+|Collaboration Tools|Notion, GitHub, GitLab|
+<br>  
 
 ---
 
