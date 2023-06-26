@@ -6,6 +6,7 @@
 - Frontend: 최지훈 - https://github.com/Hanigaram <br>
 - Backend: 김윤지 - https://github.com/Namani31 <br>
 - AR: 한승주 - https://github.com/ComeOnFeelTheNoise-yeah
+- 프로젝트 서포트: 유지수 - https://github.com/Tetrahedrite
 
 ▶ <b>개발 환경</b>
 
