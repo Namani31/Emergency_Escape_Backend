@@ -25,7 +25,6 @@
 |API Documentation|Swagger|
 |IDE|Visual Studio Code, IntelliJ, DataGrip|
 |Collaboration Tools|Notion, GitHub, GitLab|
-<br>  
 
 ---
 
