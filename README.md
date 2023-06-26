@@ -39,7 +39,7 @@
 ▶ <b>유인물</b>  
 - 첫 번째 유인물의 <b> QR코드를 스캔하시면 프로젝트의 설명이 담긴 PPT 링크로 연결</b>됩니다.
 - 사용된 도면은 '선문대학교 인문관' 입니다.
-- 번호는 개인정보라서 지웠습니다.
+- 핸드폰 번호는 개인정보라서 삭제했습니다.
   
 ![emergency_escape_유인물1](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/d47f278c-8687-445c-88e8-69863b9d8613)
 
@@ -47,9 +47,20 @@
 
 ---
 
-▶ <b>시현 영상 - APP</b>
+▶ <b>시현 영상 - APP (GIF)</b>
 
-![emergency_escape](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/c9a7539e-f8a7-4d7f-bd32-f90ac7b00261)
+![emergency_escape_ar](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/b4447dc7-83fe-43f8-8a11-7f0d91438cc1)
 
 ---
-▶ <b>시현 영상 - WEB</b>
+▶ <b>시현 영상 - WEB (GIF)</b>
+- 로그인 실패 예외 처리 <br>
+![emergency_escape_front_login](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/17eae792-a0fb-4b68-ae42-924752059f2f) <br>
+
+- 건물 내부 실시간 조회 (왼쪽에 커서 갖다대면 슬라이드 메뉴 표시) <br>
+![emergency_escape_front_Real-time_ inquiry_inside_the building](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/59890bd7-728e-46ed-8ce3-7f1d403e30d0) <br>
+
+- 사용자가 '내 위치 전송' 터치 시, 웹에서 빨간 점으로 위치 표시 <br>
+![emergency_escape_help](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/17625ebd-d7c0-4a82-8057-a0e742b16499) <br>
+
+- 2D 건물 구조도 조회 <br>
+![emergency_escape_front_floor_plan](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/5524916b-ca7c-44a8-9521-9e23b076aa90)
