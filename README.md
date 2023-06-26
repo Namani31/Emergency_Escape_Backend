@@ -38,6 +38,7 @@
 
 ▶ <b>유인물</b>  
 - 첫 번째 유인물의 <b> QR코드를 스캔하시면 프로젝트의 설명이 담긴 PPT 링크로 연결</b>됩니다.
+- 사용된 도면은 '선문대학교 인문관' 입니다.
 - 번호는 개인정보라서 지웠습니다.
   
 ![emergency_escape_유인물1](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/d47f278c-8687-445c-88e8-69863b9d8613)
