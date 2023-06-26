@@ -31,7 +31,6 @@
 
 ▶ <b>시스템 구조도</b>  
 - 클릭하면 자세하게 보실 수 있습니다.
-
 ![시스템 구조도](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/a2855cbd-27ab-4035-b50e-197b7918fd55)
 
 ---
@@ -40,7 +39,6 @@
 - 첫 번째 유인물의 <b> QR코드를 스캔하시면 프로젝트의 설명이 담긴 PPT 링크로 연결</b>됩니다.
 - 사용된 도면은 '선문대학교 인문관' 입니다.
 - 핸드폰 번호는 개인정보라서 삭제했습니다.
-  
 ![emergency_escape_유인물1](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/d47f278c-8687-445c-88e8-69863b9d8613)
 
 ![emergency_escape_유인물2](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/669fcbbc-788d-4969-a3e3-6282fdeb9c18)
@@ -64,3 +62,12 @@
 
 - 2D 건물 구조도 조회 <br>
 ![emergency_escape_front_floor_plan](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/5524916b-ca7c-44a8-9521-9e23b076aa90)
+
+---
+
+▶ <b>선문대학교 산학공동 경진대회 동상 수여</b> <br>
+<img src="https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/aeb96d10-1ee3-48eb-abbb-e8af473f4c45" width="400" height="600"/>
+
+---
+▶ <b>저작권 등록</b> <br>
+<img src="https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/032c8410-d762-4b4e-98f8-57f4aec1abf7" width="400" height="600"/>
