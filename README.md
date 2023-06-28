@@ -2,7 +2,8 @@
 
 ![로고3](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/85d000ba-4bb3-4d9d-8d2a-06f90af9af70)
 ----
-▶ <b>팀원 소개</b>  
+
+▶ <b>팀원 소개</b> <br> 
 |이름|담당|깃허브 주소|
 |------|:---:|---|
 |최지훈|Frontend|https://github.com/Hanigaram|
@@ -11,8 +12,7 @@
 |유지수|프로젝트 서포트|https://github.com/Tetrahedrite|
 <br>
 
-▶ <b>개발 환경</b>
-
+▶ <b>개발 환경</b> <br>
 |제목|내용|
 |------|------|
 |Language|Java, JavaScript(Node.js), C#|
@@ -28,46 +28,60 @@
 
 ---
 
-▶ <b>시스템 구조도</b>  
+▶ <b>시스템 구조도</b> <br>
 - 클릭하면 자세하게 보실 수 있습니다.
 ![시스템 구조도](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/a2855cbd-27ab-4035-b50e-197b7918fd55)
 
 ---
 
-▶ <b>유인물</b>  
+▶ <b>유인물</b> <br>
 - 첫 번째 유인물의 <b> QR코드를 스캔하시면 프로젝트의 설명이 담긴 PPT 링크로 연결</b>됩니다.
 - 사용된 도면은 '선문대학교 인문관' 입니다.
 - 핸드폰 번호는 개인정보라서 삭제했습니다.
   
 ![emergency_escape_유인물1](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/d47f278c-8687-445c-88e8-69863b9d8613)
 
-![emergency_escape_유인물2](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/669fcbbc-788d-4969-a3e3-6282fdeb9c18)
+![emergency_escape_유인물2](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/669fcbbc-788d-4969-a3e3-6282fdeb9c18) <br>
 
 ---
 
 ▶ <b>시현 영상 - APP (GIF)</b>
+- QR 스캔하여 메인 화면 이동 <br>
+<img src="https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/4074ed0f-0452-4e45-9093-0fa387992352" width="400" height="500"/> <br><br><br>
 
-![emergency_escape_ar](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/b4447dc7-83fe-43f8-8a11-7f0d91438cc1)
+- 119 전화 연결 <br>
+<img src="https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/50da0bfe-1db6-4c59-9609-8c1d9e23e92a" width="400" height="600"/> <br><br><br>
+
+- Beacon 인식 <br>
+<img src="https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/c911b5b2-acf9-4395-82aa-60817630e835" width="400" height="600"/> <br><br><br>
+
+- 내 위치 전송 (웹 사이트에서 빨간 점으로 표시) <br>
+<img src="https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/631f7bd4-b7ba-4a91-844b-1808910c24ad" width="400" height="600"/> <br><br><br>
+
+- 대피 경로 안내 <br>
+<img src="https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/b4447dc7-83fe-43f8-8a11-7f0d91438cc1" width="400" height="600"/> <br>
 
 ---
-▶ <b>시현 영상 - WEB (GIF)</b>
+
+▶ <b>시현 영상 - WEB (GIF)</b> <br>
 - 로그인 실패 예외 처리 <br>
-![emergency_escape_front_login](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/17eae792-a0fb-4b68-ae42-924752059f2f) <br>
+![emergency_escape_front_login](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/17eae792-a0fb-4b68-ae42-924752059f2f) <br><br><br>
 
 - 건물 내부 실시간 조회 (왼쪽에 커서 갖다대면 슬라이드 메뉴 표시) <br>
-![emergency_escape_front_Real-time_ inquiry_inside_the building](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/59890bd7-728e-46ed-8ce3-7f1d403e30d0) <br>
+![emergency_escape_front_Real-time_ inquiry_inside_the building](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/59890bd7-728e-46ed-8ce3-7f1d403e30d0) <br><br><br>
 
 - 사용자가 '내 위치 전송' 터치 시, 웹에서 빨간 점으로 위치 표시 <br>
-![emergency_escape_help](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/17625ebd-d7c0-4a82-8057-a0e742b16499) <br>
+![emergency_escape_help](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/17625ebd-d7c0-4a82-8057-a0e742b16499) <br><br><br>
 
 - 2D 건물 구조도 조회 <br>
-![emergency_escape_front_floor_plan](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/5524916b-ca7c-44a8-9521-9e23b076aa90)
+![emergency_escape_front_floor_plan](https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/5524916b-ca7c-44a8-9521-9e23b076aa90) <br>
 
 ---
 
 ▶ <b>선문대학교 산학공동 경진대회 동상 수여</b> <br>
-<img src="https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/aeb96d10-1ee3-48eb-abbb-e8af473f4c45" width="400" height="600"/>
+<img src="https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/aeb96d10-1ee3-48eb-abbb-e8af473f4c45" width="400" height="600"/> <br>
 
 ---
+
 ▶ <b>저작권 등록</b> <br>
 <img src="https://github.com/Namani31/Emergency_Escape_Backend/assets/71462755/032c8410-d762-4b4e-98f8-57f4aec1abf7" width="400" height="600"/>
